@@ -1,31 +1,44 @@
+package curriculum_A;
 
-public class Main {
+public class Quustion1 {
 
 	public static void main(String[] args) {
 		
-		// Q1
-		byte byteNum = 0;       // 小さい数字（−128〜127）
-        short shortNum = 0;     // ちょっと大きい数字
-        int intNum = 0;         // 普通の数字（よく使う！）
-        long longNum = 0L;      // すごく大きい数字（最後にLをつける）
-        float floatNum = 0.0f;  // 小数（最後にfをつける）
-        double doubleNum = 0.0; // 小数（もっと正確）
-        char letter = 'A';      // 1文字（' ' ←シングルクォート）
-        String letters = "Hello"; // 文字列（" " ←ダブルクォート）
-        boolean bool = true;    // 真（true）か偽（false）
+		// Q1 初期値の代入（＝値を最初にセットする）
+        byte byteNum = 10;      // byte型は0が初期値だけど、10を代入
+        short shortNum = 100;   // short型は0が初期値だけど、100を代入
+        int intNum = 1000;      // int型は0が初期値だけど、1000を代入
+        long longNum = 10000L;  // long型は0Lが初期値だけど、10000Lを代入
+        float floatNum = 9.5f;  // float型は0.0fが初期値だけど、9.5fを代入
+        double doubleNum = 10.5; // double型は0.0が初期値だけど、10.5を代入
+        char letter = 'A';      // char型は '\u0000' が初期値だけど、'A'を代入
+        String letters = "ハロー"; // String型はnullが初期値だけど、“ハロー”を代入
+        boolean bool = true;    // boolean型はfalseが初期値だけど、trueを代入
+
+        // 確認出力
+        System.out.println(byteNum);
+        System.out.println(shortNum);
+        System.out.println(intNum);
+        System.out.println(longNum);
+        System.out.println(floatNum);
+        System.out.println(doubleNum);
+        System.out.println(letter);
+        System.out.println(letters);
+        System.out.println(bool);
+
 
      // Q2
-        byteNum = 10;
-        shortNum = 1000;
-        intNum = 10000;
-        longNum = 100000L;
-        floatNum = 9.5f;
-        doubleNum = 0.5;
-        letter = 'A';
-        letters = "ABC";
-        bool = true;
-        
-     // Q3
+		byte byteNum = 10;
+        short shortNum = 100;
+        int intNum = 1000;
+        long longNum = 10000L;
+
+        float floatNum = 9.5f;
+        double doubleNum = 10.5;
+        char letter = 'a';
+        String letters = "ハロー"; // ← 課題どおりに修正！
+        boolean bool = true;
+
         System.out.println(byteNum);
         System.out.println(shortNum);
         System.out.println(intNum);
@@ -36,6 +49,26 @@ public class Main {
         System.out.println(letters);
         System.out.println(bool);
         
+  	  //Q3 :Q2で使った変数
+        byte byteNum = 10;
+        short shortNum = 100;
+        int intNum = 1000;
+        long longNum = 10000L;
+        float floatNum = 9.5f;
+        double doubleNum = 10.5;
+        char letter = 'A';
+        String letters = "ハロー";
+        boolean bool = true;
+
+        // 🔸 Q3 出力
+        System.out.println(byteNum + shortNum + intNum + longNum); // 11110
+        System.out.println(floatNum + doubleNum); // 20.0（→出力的には20）
+        System.out.println(letter + " " + letters + " " + bool); // a ハロー true
+        System.out.println(byteNum + shortNum + intNum + 20); // 11130
+        System.out.println(1E+10); // 1E+10
+        System.out.println(doubleNum / shortNum); // 0.105
+        System.out.println(10 - shortNum); // -90
+        
      // Q4
         String name = "山田太郎";
         System.out.println("こんにちは、" + name + "さん！");
@@ -44,14 +77,11 @@ public class Main {
         System.out.println("年齢：" + age + "歳");
         
      // Q5
-        int a = 10;
-        int b = 3;
+    	// int型の変数 age を宣言して、25を代入
+        int age = 25;
 
-        System.out.println("a + b = " + (a + b));  
-        System.out.println("a - b = " + (a - b));  
-        System.out.println("a * b = " + (a * b));  
-        System.out.println("a / b = " + (a / b));  
-        System.out.println("a % b = " + (a % b));  
+        // age変数を使って出力
+        System.out.println("年齢：" + age + "歳");
         
      // Q6
         int num1 = 10;  
@@ -85,12 +115,29 @@ public class Main {
         System.out.println(numStr10 + "点");
         
      // Q11
-        int num = 15;  // 変数numを作って値を入れる
+  	  // int型の変数aとbを作って値を入れる
+        int a = 10;
+        int b = 20;
 
-        if (num > 10) {
-            System.out.println("大きい");
-        } else {
-            System.out.println("小さい");
+        // aがbより小さいかどうかをresultに代入
+        boolean result = a < b;
+
+        // resultの値を出力
+        System.out.println(result);
+        
+     // Q12：三項演算子を使った条件分岐
+        int x = 15;  // 変数xに15を代入
+        String judge = (x >= 10) ? "OK" : "NG";  // 三項演算子で条件分岐
+        System.out.println(judge);
+        
+     // Q13：「Java」を「Python」に置き換える
+        // ============================
+        String text = "私はJavaが好きです。Java楽しい！";
+
+        // 「Java」を「Python」に置き換える
+        String replacedText = text.replace("Java", "Python");
+
+        // 結果を出力
+        System.out.println(replacedText);
         } 
-	}
 }

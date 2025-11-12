@@ -37,7 +37,7 @@ public class Quustion1 {
         letters   = "ハロー"; // ← 課題指定通り
         bool      = true;
 
-        // 出力　
+        // 出力
         System.out.println(byteNum);
         System.out.println(shortNum);
         System.out.println(intNum);

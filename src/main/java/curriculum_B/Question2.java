@@ -82,8 +82,6 @@ public class Question2 {
         } else {
             System.out.println("入力された文字は「" + input + "」です");
         }
-
-        scanner.close();
       //Q9
         // 入力をお願いするメッセージ
         System.out.print("1〜7の数字を入力してください: ");

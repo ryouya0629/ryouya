@@ -1,0 +1,19 @@
+プレイヤー: ryouya HP:70 AT:13 SP:7
+デーモン: DefaultDaemon HP:50 AT:10 SP:5
+--------------------------------
+ターン開始！ 先攻は ryouya！
+ryouya の攻撃 → DefaultDaemon HP:50 → HP:37
+DefaultDaemon の攻撃 → ryouya HP:70 → HP:60
+--------------------------------
+ターン開始！ 先攻は ryouya！
+ryouya の攻撃 → DefaultDaemon HP:37 → HP:24
+DefaultDaemon の攻撃 → ryouya HP:60 → HP:50
+--------------------------------
+ターン開始！ 先攻は ryouya！
+ryouya の攻撃 → DefaultDaemon HP:24 → HP:11
+DefaultDaemon の攻撃 → ryouya HP:50 → HP:40
+--------------------------------
+ターン開始！ 先攻は ryouya！
+ryouya の攻撃 → DefaultDaemon HP:11 → HP:0
+DefaultDaemon は倒れた！
+勝者は ryouya！
